@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Marcus | Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <div class="loading-page">
+        <svg class="svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="240" zoomAndPan="magnify" viewBox="0 0 180 179.999997" height="240" preserveAspectRatio="xMidYMid meet" version="1.0"><defs><clipPath id="121d0c4f42">
+            <path d="M 28.929688 6.050781 L 151.179688 6.050781 L 151.179688 174 L 28.929688 174 Z M 28.929688 6.050781 " clip-rule="nonzero"/></clipPath></defs><path fill="#ffffff" d="M 122.621094 8.59375 L 89.339844 27.792969 L 84.152344 54.421875 L 63.746094 42.566406 L 30.449219 61.78125 L 30.722656 155.898438 L 57.515625 171.464844 L 78.238281 159.5 L 78.238281 141.003906 L 94.234375 150.289062 L 113.011719 139.46875 L 116.207031 122.839844 L 128.949219 130.242188 L 149.671875 118.277344 L 149.414062 24.160156 Z M 122.621094 8.59375 " fill-opacity="1" fill-rule="nonzero"/><path fill="#000000" d="M 122.621094 8.59375 L 89.339844 27.792969 L 84.152344 54.421875 L 63.746094 42.566406 L 30.449219 61.78125 L 30.722656 155.898438 L 57.515625 171.464844 L 78.238281 159.5 L 78.238281 141.003906 L 94.234375 150.289062 L 113.011719 139.46875 L 116.207031 122.839844 L 128.949219 130.242188 L 149.671875 118.277344 L 149.414062 24.160156 Z M 122.621094 8.59375 " fill-opacity="0.2" fill-rule="nonzero"/><path fill="#ffffff" d="M 149.414062 24.160156 L 149.671875 118.265625 L 128.949219 130.242188 L 128.734375 58.449219 L 112.96875 139.46875 L 94.1875 150.289062 L 78.039062 87.710938 L 78.238281 159.5 L 57.515625 171.464844 L 57.238281 77.34375 L 90.539062 58.132812 L 103.539062 107.988281 L 116.128906 43.355469 Z M 149.414062 24.160156 " fill-opacity="1" fill-rule="nonzero"/><g clip-path="url(#121d0c4f42)"><path fill="#000000" d="M 57.515625 173.226562 L 29.203125 156.78125 L 28.929688 60.914062 L 63.746094 40.804688 L 83.074219 52.035156 L 87.984375 26.820312 L 122.621094 6.832031 L 150.933594 23.277344 L 151.191406 119.144531 L 128.933594 131.988281 L 117.285156 125.226562 L 114.246094 140.425781 L 94.1875 152.054688 L 79.714844 143.632812 L 79.714844 160.351562 Z M 58.761719 78.273438 L 59.019531 168.878906 L 76.71875 158.664062 L 76.488281 75.65625 L 95.160156 147.980469 L 111.597656 138.496094 L 127.246094 58.164062 L 130.285156 58.449219 L 130.484375 127.613281 L 148.183594 117.398438 L 147.925781 26.773438 L 117.511719 44.328125 L 103.828125 114.828125 L 89.566406 60.441406 Z M 32.242188 155.03125 L 55.976562 168.820312 L 55.71875 78.273438 L 31.96875 64.425781 Z M 79.714844 140.121094 L 91.878906 147.144531 L 79.714844 99.824219 Z M 117.894531 122.0625 L 127.414062 127.597656 L 127.261719 74 Z M 85.855469 53.664062 L 91.847656 57.144531 L 103.328125 101.074219 L 114.425781 44.070312 L 90.417969 30.179688 Z M 33.488281 61.796875 L 57.238281 75.597656 L 87.511719 58.132812 L 63.746094 44.328125 Z M 92.378906 27.808594 L 116.128906 41.609375 L 146.375 24.144531 L 122.621094 10.34375 Z M 92.378906 27.808594 " fill-opacity="1" fill-rule="nonzero"/></g>
+        </svg>
+    </div>
+    <nav id="desktop-nav">
+      <div class="logo">Marcus Mendoza</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Marcus Mendoza</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic-3.png" alt="Marcus Mendoza profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello! My name is</p>
+        <h1 class="title">Marcus Mendoza</h1>
+        <p class="section__text__p2">I'm a <span class="auto-type"></span></p>
+        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+        <script>
+            var typed = new Typed(".auto-type", {
+                strings: ["Frontend Developer", "College Student", "Coding Instructor", "Photographer"],
+                startDelay: 3000,
+                typeSpeed: 100,
+                backSpeed: 30,
+                loop: true,
+            })
+        </script>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume-2024.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://linkedin.com/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1 hidden">Get To Know More</p>
+      <h1 class="title hidden">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about-pic-5.png"
+            alt="Profile picture"
+            class="about-pic hidden"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container hidden">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>Coding Instructor<br />Backend Development <br/> Database Management</p>
+            </div>
+            <div class="details-container hidden">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>A.S. Computer Science<br />(Intending On Transferring <br/> for B.S. Computer Science)</p>
+            </div>
+          </div>
+          <div class="text-container hidden">
+            <p>
+                Hi! 👋 Welcome to my website! I’m currently pursuing an A.S. in Computer Science at Fullerton College, with an expectation to transfer to a 4 year university this Fall 2024. 
+                I'm also specializing in backend development and database management as an intern at SeekEats in Los Angeles, where I’ve designed and 
+                implemented robust API endpoints to enhance user experience and have played a key role in developing a dynamic rating system for the app. 
+                Additionally, I have experience as a Coding Instructor at Code Ninjas + Coding Minds, teaching coding concepts to students of various ages 
+                and fostering creativity and critical thinking.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1 hidden">Explore My</p>
+      <h1 class="title hidden">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container hidden">
+            <h2 class="experience-sub-title">Coding Languages</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>C++</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Java</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Python</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container hidden">
+            <h2 class="experience-sub-title">Full Stack Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>MongoDB</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Git</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>TypeScript</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1 hidden">Browse My Recent</p>
+      <h1 class="title hidden">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container hidden">
+            <div class="article-container">
+              <img
+                src="./assets/project-1.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Personal Portfolio Website</h2>
+            <div class="text-container">
+                <p>
+                    Developed using HTML, CSS, and JavaScript.
+                    <br/>
+                    <br/>
+                </p>
+              </div>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container hidden">
+            <div class="article-container">
+              <img
+                src="./assets/project-2.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Wordle Clone</h2>
+            <div class="text-container">
+                <p>
+                    Developed using HTML, CSS, and JavaScript.
+                    <br/>
+                    <br/>
+                </p>
+              </div>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1 hidden">Get in Touch</p>
+      <h1 class="title hidden">Contact Me</h1>
+      <div class="contact-info-upper-container hidden">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:hmnimarcus@gmail.com">hmnimarcus@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/marcusmendoza">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2023 Marcus Mendoza. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
